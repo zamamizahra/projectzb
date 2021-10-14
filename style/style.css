@@ -1,0 +1,123 @@
+
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url("../fonts/IRANSansWeb.eot");
+    src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/IRANSansWeb.ttf") format("truetype"),
+      url("../fonts/IRANSansWeb.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #7b80aa , #d2bdbc);
+    background-attachment: fixed;
+    font-family: "IRANSansWeb"; 
+    direction: rtl;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.col-4{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);   
+}
+.col-100{
+    width: 90%;
+}
+.subtitle{
+    color: white;
+    font-size: 35px;
+    font-weight: 500px;
+}
+.title{
+    color: white;
+    font-size: 80px;
+    margin-top: 0;
+    text-align: center;
+}
+.col-6{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.table{
+    background: rgba(255, 255, 255, 0.938);
+    padding: 20px 10px;
+    box-shadow: 0 0 10px #00000070;
+}
+.avatar{
+    border: 1px solid rgba(112,112,112,0.5);
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -100px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.table ul li {
+    padding: 10px;
+    list-style: none;
+    background: rgba(197, 204, 222, 0.3);
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+.table a:hover{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .col{
+        width: 50%;
+        margin-top: 75px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .subtitle{
+        font-size: 22px;
+    }
+    .logo{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .col{
+        width: 100%;
+        margin-top: 75px;
+    }
+    .col-100{
+        width:70%
+    }
+    .title{
+        font-size: 45px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .logo{
+        width: 70%;
+    }
+}
